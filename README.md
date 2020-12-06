@@ -16,10 +16,11 @@ Teste automatizado com Cypress e Cucumber utilizando Gherkin (descrição dos ce
 
 6 - Validar se o produto foi adicionado ao carrinho com sucesso
 
-## Ferramentas utilizadas
+## Ferramentas
 
 - [`Cypress`](https://on.cypress.io): Framework para realizar testes automatizados.
-- [`Cucumber`](https://cucumber.io/): Ferramenta para executar testes de aceitação automatizados criados em formato BDD.
+- [`Cucumber`](https://cucumber.io/): Framework para desenvolvimento orientado pelo comportamento (BDD).
+- [`Gherkin](https://cucumber.io/docs/gherkin/reference/): Linguagem específica para descrever comportamentos.
 
 ## Configuração do ambiente
 
@@ -31,7 +32,7 @@ Na pasta do projeto, abra o terminal e instale as depedências utilizando o coma
 npm install
 ```
 
-> A versão do Cypress utilizada durante a criação e execução dos testes foi a 6.0.1. Com intuito de evitar erros durante futuras execuções deste teste, ao executar o comando acima a versão indicada que será instalada.
+> A versão do Cypress utilizada durante a criação e execução dos testes foi a 6.0.1. Com intuito de evitar erros durante futuras execuções deste teste (devido a mudanças e atualizações), ao executar o comando acima a versão indicada será instalada.
 
 ## Execução do teste
 
@@ -43,12 +44,12 @@ npm run cy.open
 
 Aguarde até que o Dashboard do Cypress seja carregado.
 
-Na tela que será carregada, clique em **_RUN 2 INTEGRATION SPECS_** (localizado no canto superior direito da Dashboard do Cypress) para que todos os testes sejam executados de forma direta.
+Na tela que será carregada, clique em **_RUN 2 INTEGRATION SPECS_** (localizado no canto superior direito da Dashboard do Cypress) para que todos os testes sejam executados.
 
-> Além disso, é possível executar os testes de modo independente. Para executar apenas a feature de busca, basta clicar em *"01-buscar.feature"*. Ou então, para executar apenas a feature de adicionar produto ao carrinho, basta clicar em *"02-adicionar.feature"*.
-
-> O Cypress é uma ferramente nova, então, durante a primeira execução do teste, erros podem ocorram devido ao timeout (tempo para carregar a página, tempo para o elemento ficar visível na tela), entre outros. Recomenda-se, então, que o teste seja executado novamente. Utilize as teclas **Ctrl + R** para isso.
+> Além disso, é possível executar os testes de modo independente. Para executar apenas a feature de busca, na tela do Cypress, basta clicar em *"01-buscar.feature"*. Ou então, para executar apenas a feature de adicionar produto ao carrinho, basta clicar em *"02-adicionar.feature"*.
 
 ## Observação
 
-O arquivo [resultado-final-do-teste.png](./resultado-final-do-teste.PNG) exibe o resultado final após a execução dos testes. Onde é possível observar que o Cypress levou 11.90 segundos para executar os casos de testes descritos.
+O arquivo [resultado-final-do-teste.png](./resultado-final-do-teste.png) exibe o resultado final após a execução dos testes. Onde é possível observar que o Cypress levou 09.01 segundos para executar o fluxo de teste descrito.
+
+> O Cypress é uma ferramente nova, então, durante a primeira execução do teste, erros podem ocorrer devido ao timeout (tempo para carregar a página, tempo para o elemento ficar visível na tela), tempo elevado para finalizar a execução, entre outros. Recomenda-se, então, que o teste seja executado novamente.
