@@ -22,7 +22,7 @@ Teste automatizado com Cypress e Cucumber utilizando Gherkin (descrição dos ce
 
 - [`Cypress`](https://on.cypress.io): Framework para realizar testes automatizados.
 - [`Cucumber`](https://cucumber.io/): Framework para desenvolvimento orientado pelo comportamento (BDD).
-- [`Gherkin](https://cucumber.io/docs/gherkin/reference/): Linguagem específica para descrever comportamentos.
+- [`Gherkin`](https://cucumber.io/docs/gherkin/reference/): Linguagem específica para descrever comportamentos.
 
 ## Configuração do ambiente
 
